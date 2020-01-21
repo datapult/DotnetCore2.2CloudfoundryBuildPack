@@ -1,0 +1,1231 @@
+v2.3.3 Nov 27, 2019
+====================
+
+* Remove older sdk/runtime versions
+  * Keeping these in the manifest breaks BRATS, which tries to run every "compatible" combination of sdk/runtime versions. The ones removed are not fully compatible.
+  * This means that this removes the guaranteed upgrade path from the previous version of the buildpack
+  (https://www.pivotaltracker.com/story/show/169941441)
+
+* Add dotnet-sdk 3.0.101
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895021)
+
+* Add dotnet-runtime 2.1.14
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895020)
+
+* Add dotnet-aspnetcore 2.2.8
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895023)
+
+* Add dotnet-runtime 3.0.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895016)
+
+* Add dotnet-aspnetcore 3.0.1
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895018)
+
+* Add dotnet-aspnetcore 2.1.14
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169895017)
+
+* Add dotnet-runtime 2.2.8
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169894978)
+
+* Update to go 1.13
+  (https://www.pivotaltracker.com/story/show/169868686)
+
+* Update call to InternetTraffic to reflect new signature
+
+v2.3.2 Oct 31, 2019
+====================
+
+* Add node 10.17.0, remove node 10.16.3
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/169300322)
+
+
+v2.3.1 Oct 10, 2019
+====================
+
+* Clean up extraneous additions of dotnet deps
+    * Fix libunwind source and source-sha
+  (https://www.pivotaltracker.com/story/show/168706196)
+
+* Add dotnet-runtime 3.0.0
+  for stack(s) cflinuxfs3, preview6-27720-01-cflinuxfs2, preview6-27720-01-cflinuxfs3, preview6-27720-01
+  (https://www.pivotaltracker.com/story/show/168937937)
+
+* Add dotnet-aspnetcore 3.0.0
+  for stack(s) cflinuxfs3, preview6-19265-03-cflinuxfs2, preview6-19265-03-cflinuxfs3, preview6-19265-03
+  (https://www.pivotaltracker.com/story/show/168937931)
+
+* Add dotnet-sdk 3.0.100
+  for stack(s) cflinuxfs2, cflinuxfs3, preview6-cflinuxfs3, preview6
+  (https://www.pivotaltracker.com/story/show/168942719)
+
+v2.2.15 Sep 25, 2019
+=====================
+
+* Prune dotnet dependencies to shrink size of packaged buildpack
+  (https://www.pivotaltracker.com/story/show/168706472)
+
+* Remove cflinuxfs2 dependencies
+  Fixes #214
+  (https://www.pivotaltracker.com/story/show/166710429)
+  (https://www.pivotaltracker.com/story/show/168706472)
+
+
+* Add dotnet-sdk 2.2.402
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468458)
+
+* Add dotnet-sdk 2.1.802
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468456)
+
+* Add dotnet-sdk 2.2.206
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468455)
+
+* Add dotnet-sdk 2.1.606
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468457)
+
+* Add dotnet-runtime 2.2.7
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468454)
+
+* Add dotnet-aspnetcore 2.1.13
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468452)
+
+* Add dotnet-aspnetcore 2.2.7
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468454)
+
+* Add dotnet-runtime 2.1.13
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468452)
+
+* Add dotnet-sdk 2.2.109
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468454)
+
+* Add dotnet-sdk 2.1.509
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/168468452)
+
+
+
+v2.2.14 Sep 05, 2019
+=====================
+
+* When a .NET Core framework version is unavailable, roll forward to the next minor line (not just the next patch version)
+  (https://www.pivotaltracker.com/story/show/167857066)
+
+* Do not error out when searching for a library in a solution with multiple *deps.json files
+  (https://www.pivotaltracker.com/story/show/166179402)
+
+* Add node 10.16.3, remove node 10.16.0
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167933824)
+
+* Add dotnet-sdk 2.2.401
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167852392)
+
+* removed 1.0.x and 1.1.x SDKs and Runtimes as they are EOL
+  (https://www.pivotaltracker.com/story/show/167241487)
+
+* Add dotnet-sdk 2.1.801
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167793092)
+
+* Add dotnet-sdk 2.1.605
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167786118)
+
+* Add dotnet-sdk 2.1.701
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167786124)
+
+* Add libgdiplus 6.0, remove libgdiplus 5.6
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167677996)
+
+
+v2.2.13 Jul 30, 2019
+=====================
+
+* Add support for dotnetcore 3 Preview
+  (https://www.pivotaltracker.com/story/show/165612794)
+
+* Remove dotnet-runtime and dotnet-aspnetcore 2.1.10 and 2.2.4 for all stacks.
+
+* Remove dotnet-sdk 2.1.507, 2.2.107, 2.2.203, and 2.2.204 for all stacks.
+
+* Add dotnet-sdk 2.2.301
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167515437)
+
+* Add dotnet-runtime 2.2.6
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167208414)
+
+* Add dotnet-aspnetcore 2.2.6
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167208414)
+
+* Add dotnet-sdk 2.2.205
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167208414)
+
+* Add dotnet-runtime 2.1.12
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167186098)
+
+* Add dotnet-aspnetcore 2.1.12
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167186098)
+
+* Add dotnet-sdk 2.1.508
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/167186098)
+
+* Add node 10.16.0, remove node 10.15.2
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166317034)
+
+v2.2.12 May 24, 2019
+=====================
+
+* Add dotnet-sdk 2.2.204
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166040258)
+
+* Update manifest.yml to remove unnecessary dep Updat manifendencies
+	Removes the following dated dependencies
+
+	Remove dotnet-aspnetcore 2.1.7 for stacks cflinuxfs2, cflinuxfs3
+	Remove dotnet-aspnetcore 2.1.8 for stacks cflinuxfs2, cflinuxfs3
+	Remove dotnet-aspnetcore 2.1.9 for stacks cflinuxfs2, cflinuxfs3
+	Remove dotnet-aspnetcore 2.2.2 for stacks cflinuxfs2, cflinuxfs3
+	Remove dotnet-aspnetcore 2.2.3 for stacks cflinuxfs2, cflinuxfs3
+
+
+	Remove dotnet-sdk 1.1.11 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-sdk 1.1.12 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-sdk 2.1.506 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-sdk 2.2.106 for stack(s) cflinuxfs2, cflinuxfs3
+
+
+	Remove dotnet-runtime  1.0.12 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  1.1.11 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.1.7 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.1.8 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.1.9 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.2.1 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.2.2 for stack(s) cflinuxfs2, cflinuxfs3
+	Remove dotnet-runtime  2.2.3 for stack(s) cflinuxfs2, cflinuxfs3
+	(https://www.pivotaltracker.com/story/show/164990982)
+
+* Add dotnet-runtime 2.2.5
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166023300)
+
+* Add dotnet-aspnetcore 2.2.5
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166023300)
+
+* Add dotnet-sdk 2.2.107
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166023300)
+
+* Add dotnet-runtime 1.1.13
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166021837)
+
+* Add dotnet-sdk 1.1.14
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166021837)
+
+* Add dotnet-aspnetcore 2.1.11
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166018701)
+
+* Add dotnet-runtime 2.1.11
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166018701)
+
+* Add dotnet-sdk 2.1.507
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/166018701)
+
+* add node 10.x for cflinuxfs2
+  (https://www.pivotaltracker.com/story/show/164990982)
+
+* Remove Node 6.x support
+  (https://www.pivotaltracker.com/story/show/164990982)
+
+* update install_go.sh script to use go 1.12.4
+
+v2.2.11 Apr 30, 2019
+=====================
+
+* Add dotnet-sdk 2.2.203
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165232592)
+  (https://www.pivotaltracker.com/story/show/165566174)
+
+
+v2.2.10 Apr 23, 2019
+=====================
+
+* Remove warning logs causing bosh cli error
+
+* Enable multiple node dependencies
+  - Defaults to version 6
+  - Parses version from package.json
+  (https://www.pivotaltracker.com/story/show/165216936)
+
+* Add nodejs 10.15.2
+  for stack(s) cflinuxfs3
+
+* Add dotnet-runtime 2.1.10
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165257374)
+
+* Add dotnet-aspnetcore 2.1.10, 2.2.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165257374)
+  (https://www.pivotaltracker.com/story/show/165232583)
+
+* Add dotnet-sdk 2.1.506, 2.2.106, remove 2.1.505, 2.2.105
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165257374)
+  (https://www.pivotaltracker.com/story/show/165232583)
+
+* Add dotnet-runtime 2.2.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165232583)
+
+v2.2.9 Apr 08, 2019
+====================
+
+* Add dotnet-sdk 2.1.301
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165105794)
+
+* Add node 6.17.1, remove node 6.17.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/165104943)
+
+* Add dotnet-runtime 1.0.15 for cflinuxfs2
+  (https://www.pivotaltracker.com/story/show/164586171)
+
+* Add support for Dynatrace monitoring on application-only mode
+  - Integrates lrgar/release#205
+  (https://www.pivotaltracker.com/story/show/163264752)
+
+v2.2.8 Mar 20, 2019
+====================
+
+* Add dotnet-aspnetcore 2.1.9
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452842)
+
+* Add dotnet-runtime 2.1.9
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452842)
+
+* Add dotnet-runtime 1.1.12
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164586171)
+
+* Add dotnet-sdk 1.1.13
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164586171)
+
+* Add dotnet-runtime 2.2.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452837)
+
+* Add dotnet-aspnetcore 2.2.3
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452837)
+
+* Add dotnet-sdk 2.1.505
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452842)
+
+* Add dotnet-sdk 2.2.105
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164452837)
+
+* Remove dotnet core 2.0
+  - Remove dotnet-runtime 2.0.7, 2.0.9
+  - Remove dotnet-sdk 2.0.3
+  - Add 2.2 simple app fixture
+  (https://www.pivotaltracker.com/story/show/163160081)
+
+v2.2.7 Mar 01, 2019
+====================
+
+* Add node 6.17.0, remove node 6.16.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/164301707)
+
+* Add source and source_sha256 to buildpack
+  (https://www.pivotaltracker.com/story/show/163711928)
+
+v2.2.6 Feb 20, 2019
+====================
+
+* Exit out when an unsupported stack is used
+  (https://www.pivotaltracker.com/story/show/164076510)
+
+* Remove old dependencies
+  - dotnet-aspnetcore 2.1.4, 2.1.5, 2.2.0
+  - dotnet-runtime 1.1.9, 2.1.5, 2.2.0
+  - dotnet-sdk 1.1.10, 2.1.503, 2.2.102
+  (https://www.pivotaltracker.com/story/show/163924590)
+  (https://www.pivotaltracker.com/story/show/163931527)
+  (https://www.pivotaltracker.com/story/show/163932637)
+
+* Add dotnet-sdk 2.1.504
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163931527)
+
+* Add dotnet-runtime 2.2.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163932637)
+
+* Add dotnet-aspnetcore 2.2.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163932637)
+
+* Add dotnet-sdk 2.2.104
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163932637)
+
+* Add dotnet-aspnetcore 2.1.8
+  for stack(s) cflinuxfs2
+  (https://www.pivotaltracker.com/story/show/163931527)
+
+* Add dotnet-runtime 2.1.8
+  for stack(s) cflinuxfs2
+  (https://www.pivotaltracker.com/story/show/163931527)
+
+* Add dotnet-runtime 1.1.11
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163924590)
+
+* Add dotnet-sdk 1.1.12
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163924590)
+
+* Update go to 1.11.5 for install_go
+  (https://www.pivotaltracker.com/story/show/163701450)
+
+
+v2.2.5 Jan 23, 2019
+====================
+
+* Allows for project with no csproj file
+  (https://www.pivotaltracker.com/story/show/163200644)
+
+* Use built version of go 1.11.4 in online unbuilt/URL buildpack
+  (https://www.pivotaltracker.com/story/show/163089977)
+
+* Add libgdiplus so that users can use System.Drawing.Common
+  (https://www.pivotaltracker.com/story/show/163200644)
+
+* Add bower 1.8.8, remove bower 1.8.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163439412)
+  (https://www.pivotaltracker.com/story/show/163311740)
+  (https://www.pivotaltracker.com/story/show/163295218)
+  (https://www.pivotaltracker.com/story/show/163292729)
+
+* Add libgdiplus 5.6
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163305702)
+
+* Do not dotnet restore unless the app uses dotnet sdk <= 1
+  (https://www.pivotaltracker.com/story/show/159412906)
+
+
+v2.2.4 Jan 11, 2019
+====================
+
+* Add libunwind 1.3.1, remove libunwind 1.2.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163095517)
+  (https://www.pivotaltracker.com/story/show/163036223)
+
+* Add dotnet-aspnetcore 2.2.1, 2.1.7, remove dotnet-aspnetcore 2.1.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163078854)
+
+* Add dotnet-runtime 2.1.7, remove dotnet-runtime 2.1.4, 2.1.2
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163121803)
+
+* Add dotnet-sdk 2.2.102, 2.1.503, remove dotnet-sdk 2.1.302
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/163078854)
+  (https://www.pivotaltracker.com/story/show/163121803)
+
+v2.2.3 Jan 02, 2019
+====================
+
+* Handle runtimeconfig.json files with comments
+  (https://www.pivotaltracker.com/story/show/158009692)
+
+* Add node 6.16.0, remove node 6.15.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162848357)
+
+v2.2.2 Dec 21, 2018
+====================
+
+* Add dotnet-aspnetcore 2.2.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162580717)
+
+* Add dotnet-runtime 2.2.0
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162580717)
+
+* Add dotnet-sdk 2.2.100
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162580717)
+
+v2.2.1 Dec 05, 2018
+====================
+
+* Add node 6.15.1
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/162382561)
+
+v2.2.0 Oct 23, 2018
+====================
+
+* Add dotnet-runtime 1.1.10
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161105512)
+
+* Add dotnet-runtime 2.1.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160928053)
+
+* Add dotnet-sdk 1.1.11, 2.1.403
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/161105512)
+  (https://www.pivotaltracker.com/story/show/160928053)
+
+* Add dotnet-aspnetcore 2.1.5
+  for stack(s) cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160928053)
+
+* Add dotnet-aspnetcore 2.1.4
+  for stack(s) cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160435346)
+
+* Add start command for graceful shutdown
+  (https://www.pivotaltracker.com/story/show/160480483)
+
+* Install dotnet-aspnetcore for aspnetcore apps
+  - Install dotnet-aspnetcore for FDD when it is in runtimeconfig.json
+  - Install dotnet-aspnetcore for source-based when it is in .csproj or in the nuget cache
+  - Do not install dotnet-runtime if it is already installed
+  (https://www.pivotaltracker.com/story/show/159044086)
+
+
+v2.1.5 Sep 13, 2018
+====================
+
+* AspNetCore runtime will be added to the buildpack in the next release
+
+* Update dotnet-sdk versions
+
+  - Added 2.1.402, removed 2.1.400 for stacks cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160435346)
+  (https://www.pivotaltracker.com/story/show/160141823)
+
+* Update dotnet-runtime versions
+
+  - Added 2.1.4, removed 2.1.1 for stacks cflinuxfs2, cflinuxfs3
+  (https://www.pivotaltracker.com/story/show/160435346)
+  (https://www.pivotaltracker.com/story/show/160141823)
+
+* Clean up old dotnet-sdk and dotnet-runtime versions
+  Removed:
+  - dotnet-sdk: 2.1.301
+  - dotnet-runtimes: 2.1.0, 2.0.0, 1.1.2, 1.0.5
+  (https://www.pivotaltracker.com/story/show/160141823)
+  (https://www.pivotaltracker.com/story/show/159809271)
+
+* Test for BOM at the beginning of global.json
+  (https://www.pivotaltracker.com/story/show/159041833)
+
+* Ensure that the runtime is installed to the linked dotnet-sdk location during finalize
+  (https://www.pivotaltracker.com/story/show/157522566)
+
+* Allow F# apps to be run with all versions of dotnet core
+  (https://www.pivotaltracker.com/story/show/157569422)
+
+v2.1.4 Jul 31, 2018
+====================
+
+* Add dotnet 1.1.10, 2.1.202, 2.1.302; remove dotnet 1.1.9, 2.0.2, 2.1.201, 2.1.300
+  (https://www.pivotaltracker.com/story/show/158989668)
+  (https://www.pivotaltracker.com/story/show/159008458)
+  (https://www.pivotaltracker.com/story/show/159019615)
+  (https://www.pivotaltracker.com/story/show/159019634)
+
+* Add dotnet-framework 1.0.12, 1.1.9, 2.0.9, 2.1.2
+  (https://www.pivotaltracker.com/story/show/159008458)
+  (https://www.pivotaltracker.com/story/show/159019615)
+  (https://www.pivotaltracker.com/story/show/159019634)
+
+* Respect RuntimeFrameworkVersion in csproj
+  (https://www.pivotaltracker.com/story/show/159153489)
+
+* Fix bug when csproj filename does not match AssemblyName for non-published apps
+  (https://www.pivotaltracker.com/story/show/158675178)
+
+v2.1.3 Jun 28, 2018
+====================
+
+* Remove dotnet SDK 1.1.8, remove dotnet runtime 1.0.10 and 1.1.7
+  (https://www.pivotaltracker.com/story/show/158696537)
+
+* Rebuild dotnet-framework 2.1.1
+  (https://www.pivotaltracker.com/story/show/158676653)
+
+* Rebuild dotnet 2.1.301
+  (https://www.pivotaltracker.com/story/show/158676653)
+
+v2.1.2 Jun 25, 2018
+====================
+
+* Add dotnet 2.1.301, Add dotnet-framework 2.1.1
+  (https://www.pivotaltracker.com/story/show/158558049)
+
+v2.1.1 Jun 20, 2018
+====================
+
+* Specify Dotnet SDK with buildpack.yml
+  (https://www.pivotaltracker.com/story/show/157975969)
+
+* Float dotnet runtime version with runtimeconfig.json by default
+  (https://www.pivotaltracker.com/story/show/157976204)
+
+v2.0.8 Jun 14, 2018
+====================
+
+* Add node 6.14.3, remove node 6.14.2
+  (https://www.pivotaltracker.com/story/show/158314054)
+
+* Add dotnet 2.1.300, remove dotnet 2.1.104
+  (https://www.pivotaltracker.com/story/show/157967601)
+
+* Rebuild dotnet-framework 2.1.0
+  (https://www.pivotaltracker.com/story/show/157967601)
+
+v2.0.7 Jun 05, 2018
+====================
+
+* Add dotnet 1.1.9, 2.1.201, dotnet-framework 1.0.11, 1.1.8, 2.0.7
+  Remove dotnet 1.1.7, 2.1.101, dotnet-framework 1.0.9, 1.1.6, 2.0.3, 2.0.6
+  (https://www.pivotaltracker.com/story/show/156864957)
+
+* Add node 6.14.2, remove node 6.14.1
+  (https://www.pivotaltracker.com/story/show/157199825)
+
+v2.0.6 Apr 12, 2018
+====================
+
+* Add dotnet 1.1.8, 2.1.104
+  (https://www.pivotaltracker.com/story/show/156116541)
+  (https://www.pivotaltracker.com/story/show/156448316)
+
+* Add dotnet-framework 1.0.10, 1.1.7
+
+* Remove old patch versions of dotnet and dotnet-framework:
+  - Dotnet: 1.1.6, 2.1.4
+  - Dotnet framework: 1.0.8, 1.1.5, 2.0.5
+  (https://www.pivotaltracker.com/story/show/156256919)
+
+* Add node 6.14.1, remove node 6.13.1
+  (https://www.pivotaltracker.com/story/show/156394483)
+  (https://www.pivotaltracker.com/story/show/156350231)
+
+* Add bower 1.8.4, remove bower 1.8.2
+  (https://www.pivotaltracker.com/story/show/156356230)
+  (https://www.pivotaltracker.com/story/show/156354238)
+
+
+v2.0.5 Mar 20, 2018
+====================
+
+* Add dotnet 2.1.101, dotnet-framework 2.0.6
+  (https://www.pivotaltracker.com/story/show/155961413)
+
+v2.0.4 Mar 09, 2018
+====================
+
+* Use manifest cache downloads
+  (https://www.pivotaltracker.com/story/show/155405429)
+
+* Add node 6.13.1, remove node 6.13.0
+  (https://www.pivotaltracker.com/story/show/155758175)
+
+* Document new buildpack-packager build command
+  (https://www.pivotaltracker.com/story/show/155223266)
+
+v2.0.3 Feb 22, 2018
+====================
+
+* Set default dotnet sdk to 2.x (previously 2.0.x)
+  If the requested sdk version in global.json is missing, the buildpack
+  will now attempt to find a version in the same major/minor line, before
+  using the default sdk version. (Previously the default sdk version was
+  immediately used)
+  (https://www.pivotaltracker.com/story/show/155288588)
+
+* Add node 6.13.0, remove node 6.12.3
+  (https://www.pivotaltracker.com/story/show/155196463)
+
+v2.0.2 Feb 09, 2018
+====================
+
+* Enable manifest override yml
+  (https://www.pivotaltracker.com/story/show/153614649)
+
+v2.0.1 Jan 26, 2018
+====================
+
+* Allow dotnet project names with dots (e.g. web.api)
+  (https://www.pivotaltracker.com/story/show/154537266)
+  (https://www.pivotaltracker.com/story/show/154568103)
+
+v2.0.0 Jan 16, 2018
+=====================
+
+* Convert buildpack to libbuildpack
+  (https://www.pivotaltracker.com/story/show/153093345)
+
+* Add node 6.12.3, remove node 6.12.2
+  (https://www.pivotaltracker.com/story/show/154004430)
+
+* Set dotnet sdk versions (and matching frameworks) to:
+  - 2.1.4
+  - 2.0.2, 2.0.3
+  - 1.1.6, 1.1.7
+  - 1.0.4
+  (https://www.pivotaltracker.com/story/show/153679673)
+
+v1.0.33 Dec 12, 2017
+=====================
+
+* Add node 6.12.2, remove node 6.12.0
+  (https://www.pivotaltracker.com/story/show/153514063)
+  (https://www.pivotaltracker.com/story/show/153407348)
+
+* Add dotnet 1.1.6
+  (https://www.pivotaltracker.com/story/show/153369967)
+
+v1.0.32 Nov 29, 2017
+=====================
+
+* Minimize droplet size
+  * Publish with runtime identifier (msbuild & dotnet >= 2)
+  * Remove more directories from droplet
+  (https://www.pivotaltracker.com/story/show/152900057)
+
+* Remove old patch versions of dotnet and dotnetcore
+  Dotnet: 1.1.0, 2.0.0
+  Dotnet Framework: 1.1.1, 1.1.2
+  (https://www.pivotaltracker.com/story/show/153218101)
+
+* Add dotnet 1.1.5
+  (https://www.pivotaltracker.com/story/show/152910108)
+
+* Add dotnet 2.0.3
+  (https://www.pivotaltracker.com/story/show/152897630)
+
+* Convert dotnet dependencies to xz compression
+  (https://www.pivotaltracker.com/story/show/150262247)
+
+* Add DOTNET_CLI_TELEMETRY_OPTOUT=1 to fixtures
+  (https://www.pivotaltracker.com/story/show/151816117)
+
+* Add node 6.12.0, remove node 6.11.5
+  (https://www.pivotaltracker.com/story/show/152648755)
+
+v1.0.31 Nov 06, 2017
+=====================
+
+* Store profile.d dir outside app directory on recent BAL
+  (https://www.pivotaltracker.com/story/show/151381690)
+
+* Verify dependency downloads using sha256 instead of md5
+  (https://www.pivotaltracker.com/story/show/151913767)
+
+v1.0.30 Oct 25, 2017
+=====================
+
+* Add node 6.11.5, remove node 6.11.4
+  (https://www.pivotaltracker.com/story/show/152260475)
+
+v1.0.29 Oct 17, 2017
+=====================
+
+* Add dotnet 2.0.2
+  (https://www.pivotaltracker.com/story/show/151932565)
+
+v1.0.28 Oct 10, 2017
+=====================
+
+* Add node 6.11.4, remove node 6.11.3
+  (https://www.pivotaltracker.com/story/show/151659499)
+
+* Add node_modules/.bin to PATH for project.json apps
+  (https://www.pivotaltracker.com/story/show/151134031)
+
+* Add dotnet-framework 1.0.7
+  (https://www.pivotaltracker.com/story/show/151009075)
+
+* Add dotnet, dotnet-framework 1.1.4
+  (https://www.pivotaltracker.com/story/show/151261739)
+
+v1.0.27 Sep 20, 2017
+=====================
+
+* Add bower 1.8.2, remove bower 1.8.0
+  (https://www.pivotaltracker.com/story/show/151059800)
+
+v1.0.26 Sep 08, 2017
+=====================
+
+* Add node 6.11.3, remove node 6.11.2
+  (https://www.pivotaltracker.com/story/show/150824934)
+
+* Improve SDK version installation logic
+  (https://www.pivotaltracker.com/story/show/150757043)
+
+* Fix bug with dotnet publish and node modules
+  - error was seen running gulp during dotnet publish
+
+* Minimize droplet size for published apps
+  (https://www.pivotaltracker.com/story/show/150600548)
+
+v1.0.25 Aug 22, 2017
+=====================
+
+* Define default SDK for F# as 1.1.0
+  (https://www.pivotaltracker.com/story/show/150408173)
+
+* Set Default SDK version to 2.0.0
+  (https://www.pivotaltracker.com/story/show/150343963)
+
+* Use default SDK version if requested SDK is missing
+  (https://www.pivotaltracker.com/story/show/150261814)
+
+* Add dotnet SDK 2.0.0, 1.1.0 and 1.0.4
+  Remove:
+   - 1.0.0-preview2-003131                                                                                                                                                     │·································································································
+   - 1.0.0-preview2-1-003177                                                                                                                                                   │·································································································
+   - 1.0.0-preview3-004056                                                                                                                                                     │·································································································
+   - 1.0.0-preview4-004233                                                                                                                                                     │·································································································
+  (https://www.pivotaltracker.com/story/show/150261585)
+
+* Support Visual Basic projects (#158)
+  (https://www.pivotaltracker.com/story/show/150132837)
+
+v1.0.24 Aug 07, 2017
+=====================
+
+* Add support for multi buildpack
+  (https://www.pivotaltracker.com/story/show/142852043)
+
+* Add node 6.11.2, remove node 6.11.1
+  (https://www.pivotaltracker.com/story/show/149837609)
+
+v1.0.23 Jul 21, 2017
+=====================
+
+* Add dotnet 1.1.0-preview1-005077
+  (https://www.pivotaltracker.com/story/show/148810883)
+
+* Update libunwind 1.2 -> 1.2.1
+  (https://www.pivotaltracker.com/story/show/147304789)
+
+v1.0.22 Jul 13, 2017
+=====================
+
+* Add node 6.11.1, remove node 6.11.0
+  (https://www.pivotaltracker.com/story/show/148684925)
+
+* Update buildpack to work with dotnet v2.0.0-preview2
+  - rename v2.0.0-preview2 to match output of dotnet --version
+  (https://www.pivotaltracker.com/story/show/148018577)
+  (https://www.pivotaltracker.com/story/show/148018577)
+
+* Add dotnet 1.1.0-preview1-005051
+
+v1.0.21 Jun 28, 2017
+=====================
+
+* Self contained (published) apps are now executable
+  (https://www.pivotaltracker.com/story/show/147516983)
+
+* Set DOTNET_SKIP_FIRST_TIME_EXPERIENCE by default
+  (https://www.pivotaltracker.com/story/show/147023711)
+
+v1.0.20 Jun 12, 2017
+=====================
+
+* Add dotnet-framework 2.0.0-preview1-002111-00"
+  (https://www.pivotaltracker.com/story/show/145211249)
+
+* Remove 1.0.0-preview2-1-003177, 1.0.0 and 1.0.1
+  (https://www.pivotaltracker.com/story/show/143973661)
+
+* Add node 6.11.0, remove node 6.10.3
+  (https://www.pivotaltracker.com/story/show/146731549)
+
+* Use hard-links when copying into cache.
+  - lowers disk usage
+  (https://www.pivotaltracker.com/story/show/145211249)
+
+* Make version sorting work on ruby 1.9 (cf lts)
+  (https://www.pivotaltracker.com/story/show/145211249)
+
+v1.0.19 May 22, 2017
+=====================
+
+* Only install the latest patch version for each .NET Framework
+  Also install any explicitly specified as RuntimeFramworkVersion in
+  msbuild files
+  (https://www.pivotaltracker.com/story/show/145625557)
+
+* Add staging_task.log file (#142)
+  (https://www.pivotaltracker.com/story/show/144524001)
+
+* Do not remove any .NET Frameworks during staging (#146)
+  (https://www.pivotaltracker.com/story/show/145544585)
+
+* Add EOL warning for node
+  (https://www.pivotaltracker.com/story/show/144943203)
+
+v1.0.18 May 10, 2017
+=====================
+
+* Remove dotnet sdk 1.0.1
+  (https://www.pivotaltracker.com/story/show/145144739)
+
+* Add dotnet-framework 1.0.5
+
+* Add dotnet-framework 1.1.2
+
+* Add dotnet 1.0.4
+
+v1.0.17 May 08, 2017
+=====================
+
+* Add node 6.10.3, remove node 6.10.2
+  (https://www.pivotaltracker.com/story/show/144725819)
+
+* Use smaller dotnet-framework versions
+  (https://www.pivotaltracker.com/story/show/144807179)
+
+v1.0.16 Apr 25, 2017
+=====================
+
+* Add dotnet 1.0.3, remove dotnet 1.0.0-preview4-004233
+    - dotnet 1.0.3 is now the default SDK version
+  (https://www.pivotaltracker.com/story/show/144058131)
+
+* Add node 6.10.2, remove node 6.10.1
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+v1.0.15 Apr 03, 2017
+=====================
+
+* Use ASPNETCORE_URLS instead of command line arguments
+  (https://www.pivotaltracker.com/story/show/142635287)
+
+v1.0.14 Mar 28, 2017
+=====================
+
+* Add node 6.10.1, remove node 6.10.0
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+v1.0.13 Mar 15, 2017
+=====================
+
+* Add dotnet 1.0.1
+  - remove dotnet 1.0.0-preview3-004056
+  - remove dotnet 1.0.0-preview2-003131 (oldest project.json SDK)
+  - dotnet 1.0.1 is default version
+  (https://www.pivotaltracker.com/story/show/1042066)
+
+v1.0.12 Feb 27, 2017
+=====================
+
+* Add node 6.10.0, remove node 6.9.5
+  (https://www.pivotaltracker.com/story/show/140375739)
+
+* Add local node_modules to path
+  (https://www.pivotaltracker.com/story/show/139601543)
+
+v1.0.11 Feb 08, 2017
+=====================
+
+* Add node 6.9.5, remove node 6.9.4
+  (https://www.pivotaltracker.com/story/show/138771375)
+
+* Add EOL dates for node
+  (https://www.pivotaltracker.com/story/show/137374307)
+
+* Allow user to force node to be installed
+  - node will be installed if the environment variable
+    INSTALL_NODE is set to true
+  (https://www.pivotaltracker.com/story/show/137382231)
+
+v1.0.10 Jan 23, 2017
+=====================
+
+* Add libunwind 1.2, remove libunwind 1.1
+  (https://www.pivotaltracker.com/story/show/137618327)
+
+* Publish msbuild applications during staging
+  - project.json and pre-published apps are not affected
+  (https://www.pivotaltracker.com/story/show/131118559)
+
+* Add ability to configure Debug/Release mode for apps published during
+staging
+  - default is Debug to match local cli's behavior
+  (https://www.pivotaltracker.com/story/show/131118559)
+
+v1.0.9 Jan 11, 2017
+====================
+
+* Add warning if downloaded dependency is not the latest patch version for a
+given major and minor version
+  (https://www.pivotaltracker.com/story/show/134863437)
+
+* Add warning if buildpack version used to stage an app changes
+  (https://www.pivotaltracker.com/story/show/135234395)
+
+* Add node 6.9.4, remove node 6.9.2
+  (https://www.pivotaltracker.com/story/show/137135283)
+  (https://www.pivotaltracker.com/story/show/136991485)
+
+* Add .NET SDK 1.0.0-preview4-004233
+  (https://www.pivotaltracker.com/story/show/136046769)
+
+v1.0.8 Dec 23, 2016
+====================
+
+* Fix self contained app regression (#128)
+  (https://www.pivotaltracker.com/story/show/136522395)
+
+* Add warning if app was previously staged with a different version of
+the buildpack
+  (https://www.pivotaltracker.com/story/show/136522395)
+
+v1.0.7 Dec 20, 2016
+====================
+
+* Add .NET SDK 1.0.0-preview2-003156, remove .NET SDK 1.0.0-preview2-003121
+  - Make .NET SDK 1.0.0-preview2-003156 the default SDK version
+  (https://www.pivotaltracker.com/story/show/136046769)
+
+* Add .NET Core framework 1.0.3
+  (https://www.pivotaltracker.com/story/show/136046769)
+
+* Allow project paths in .deployment file to start with ./
+  (https://www.pivotaltracker.com/story/show/133851173)
+
+* Store process id in the PID environment variable
+  (https://www.pivotaltracker.com/story/show/135799949)
+
+* Add MSBuild support
+  - Add .NET SDK 1.0.0-preview3-004056, which uses MSBuild
+  - Documented here: https://docs.cloudfoundry.org/buildpacks/dotnet-core/index.html#cli_tools
+  (https://www.pivotaltracker.com/story/show/134472507)
+
+* Add F# support
+  (https://www.pivotaltracker.com/story/show/135725073)
+
+* Package .NET Core runtimes and install separately from .NET Core SDK
+  (https://www.pivotaltracker.com/story/show/135703675)
+
+* Add node 6.9.2, remove node 6.9.1
+  (https://www.pivotaltracker.com/story/show/135643989)
+
+* Allow custom library path
+  (https://www.pivotaltracker.com/story/show/135356453)
+
+v1.0.6 Nov 23, 2016
+====================
+
+* Remove .NET SDK 1.0.0-preview2-1-003155
+  (https://www.pivotaltracker.com/story/show/134541255)
+
+* Set default version of .NET to latest LTS release (1.0.1)
+  (https://www.pivotaltracker.com/story/show/134541255)
+
+* Use vendored iniparse gem to parse .deployment
+  - Now error out if multiple project keys/paths are specified
+  - Now error out if .deployment file with no project key
+  (https://www.pivotaltracker.com/story/show/133932443)
+
+* Add dotnet 1.0.0-preview2-1-003177
+  (https://www.pivotaltracker.com/story/show/134444267)
+
+* Rebuild and change path for dotnet, node, and bower binaries
+  - We identified a potential, but unlikely, attack vector in our continuous
+    integration system. Our own auditing strongly suggests that this attack
+    vector was not taken advantage of. However, out of an abundance of caution,
+    we are rebuilding all buildpack dependencies that we maintain.
+
+v1.0.5 Nov 09, 2016
+====================
+
+* Add bower 1.8.0, remove bower 1.7.9
+  (https://www.pivotaltracker.com/story/show/133829973)
+
+* Serve libunwind from buildpacks.cloudfoundry.org
+  (https://www.pivotaltracker.com/story/show/132852595)
+
+v1.0.4 Oct 26, 2016
+====================
+
+* Add dotnet 1.0.0-preview2-1-003155
+  - includes .NET Framework 1.1.0-preview1-001100-00
+  (https://www.pivotaltracker.com/story/show/133041819)
+
+v1.0.3 Oct 21, 2016
+====================
+
+* Add default_versions support to buildpack
+  (https://www.pivotaltracker.com/story/show/132168017)
+  (https://www.pivotaltracker.com/story/show/132167537)
+
+* Add option to clear Nuget cache
+  (https://www.pivotaltracker.com/story/show/132160087)
+
+* Run verbose `dotnet run` and `dotnet restore` when BP_DEBUG is specified
+  (https://www.pivotaltracker.com/story/show/130651349)
+
+* Add node 6.9.1, remove node 6.7.0
+  (https://www.pivotaltracker.com/story/show/132796533)
+
+* Remove .NET Core 1.0.0 RC2 from manifest
+  (https://www.pivotaltracker.com/story/show/132028795)
+
+v1.0.2 Oct 11, 2016
+====================
+
+* Remove .NET Core 1.0.0 RC2
+  (https://www.pivotaltracker.com/story/show/132028795)
+
+* Add node 6.7.0, remove node 6.3.0
+  (https://www.pivotaltracker.com/story/show/131987641)
+
+* Use Cloud Foundry built + hosted dotnet dependencies
+  (https://www.pivotaltracker.com/story/show/130932637)
+
+* Add default_versions support to buildpack
+  (https://www.pivotaltracker.com/story/show/130932637)
+
+v1.0.1 Oct 5, 2016
+===================
+
+* Add support for .NET Core v1.0.1
+
+v1.0.0 Aug 24, 2016
+===================
+
+* Add support for running pre and post compile scripts using NPM and Bower to install front-end javascript and css libraries.
+
+v0.9.0 June 30, 2016
+===================
+
+* Add support for the .NET CLI 1.0 Preview 2 build and .NET Core 1.0 RTM
+
+* The default .NET CLI version to be installed is now 1.0.0-preview2-003121
+
+v0.8.0 May 16, 2016
+===================
+
+* Switch to .NET CLI from DNX
+
+* Add support for RC2 apps
+
+* Remove support for RC1 and lower apps using DNX
+
+* detect now looks for project.json files or *.runtimeconfig.json files from publish output
+
+* global.json is no longer used to specify runtime version
+
+* Remove support for lucid64 stack
+
+v0.7.0 Sep 30, 2015
+===================
+
+* Make NuGet.Config optional, detect only looks for project.json files
+
+* Support published apps for offline mode and faster staging
+
+* Remove Mono
+
+* Switch to .NET Core
+
+v0.6.0 Sep 10, 2015
+===================
+
+* Add support for beta7 apps
+
+v0.5.0 Aug 17, 2015
+===================
+
+* Removed Nowin server, replaced with use of Kestrel which allows the buildpack to run beta4 - beta6 apps.
+
+v0.4.0 Aug 05, 2015
+===================
+
+* Add support for beta6 apps
+
+* Remove support for beta5 apps
+
+v0.3.0 Jul 20, 2015
+===================
+
+* Add support for beta5 apps
+
+* Remove support for beta4 apps
+
+* Fix Mono missing trusted root certificates
+
+v0.2.0 Jun 22, 2015
+===================
+
+* Add support for beta4 apps
+
+* Remove support for beta3 apps
+
+* Update Mono version from 3.12.1 to 4.0.1
+
+v0.1.0 May 05, 2015
+===================
+
+* Initial buildpack to run beta3 apps
